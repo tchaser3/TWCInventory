@@ -1,0 +1,1329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{93869E87-264F-4FD9-A259-90CADFD4493E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>TWCInventory.My.MyApplication</StartupObject>
+    <RootNamespace>TWCInventory</RootNamespace>
+    <AssemblyName>TWCInventory</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TWCInventory.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>TWCInventory.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPartNumberToInventory.Designer.vb">
+      <DependentUpon>AddPartNumberToInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddPartNumberToInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPartNumberToWarehouseInventory.Designer.vb">
+      <DependentUpon>AddPartNumberToWarehouseInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddPartNumberToWarehouseInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPartsToInventory.Designer.vb">
+      <DependentUpon>AddPartsToInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddPartsToInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdjustInventory.Designer.vb">
+      <DependentUpon>AdjustInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdjustInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdjustInventoryDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdjustInventoryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AdjustTWInventoryCounts.Designer.vb">
+      <DependentUpon>AdjustTWInventoryCounts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdjustTWInventoryCounts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMenu.Designer.vb">
+      <DependentUpon>AdminMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArchiveIDDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArchiveIDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ArchiveIDDataTier.vb" />
+    <Compile Include="ArchiveIssuedDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArchiveIssuedDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ArchiveIssuedPartsDataTier.vb" />
+    <Compile Include="ArchiveReceivedDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArchiveReceivedDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ArchiveReceivedDataTier.vb" />
+    <Compile Include="ArchiveUsedDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArchiveUsedDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ArchiveUsedDataTier.vb" />
+    <Compile Include="BOMPartsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BOMPartsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CalculateOnHandInventory.Designer.vb">
+      <DependentUpon>CalculateOnHandInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CalculateOnHandInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeText.Designer.vb">
+      <DependentUpon>ChangeText.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeText.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckForDuplicatePartNumber.Designer.vb">
+      <DependentUpon>CheckForDuplicatePartNumber.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CheckForDuplicatePartNumber.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckTimeWarnerPartNumber.vb" />
+    <Compile Include="CloseProgram.Designer.vb">
+      <DependentUpon>CloseProgram.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CloseProgram.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompleteInventoryReport.Designer.vb">
+      <DependentUpon>CompleteInventoryReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CompleteInventoryReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateCycleCountTickets.Designer.vb">
+      <DependentUpon>CreateCycleCountTickets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateCycleCountTickets.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateID.Designer.vb">
+      <DependentUpon>CreateID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateIIDDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CreateIIDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CreateLastTransactionID.Designer.vb">
+      <DependentUpon>CreateLastTransactionID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateLastTransactionID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreatePickListFromMSR.Designer.vb">
+      <DependentUpon>CreatePickListFromMSR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreatePickListFromMSR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreatePickListFromProjectID.Designer.vb">
+      <DependentUpon>CreatePickListFromProjectID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreatePickListFromProjectID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreatePickListHeader.Designer.vb">
+      <DependentUpon>CreatePickListHeader.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreatePickListHeader.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreatePickListID.Designer.vb">
+      <DependentUpon>CreatePickListID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreatePickListID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreatePickListMenu.Designer.vb">
+      <DependentUpon>CreatePickListMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreatePickListMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreatePickListTransactionID.Designer.vb">
+      <DependentUpon>CreatePickListTransactionID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreatePickListTransactionID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreatePickListTransactions.Designer.vb">
+      <DependentUpon>CreatePickListTransactions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreatePickListTransactions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateProjectID.Designer.vb">
+      <DependentUpon>CreateProjectID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateProjectID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateProjects.Designer.vb">
+      <DependentUpon>CreateProjects.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateProjects.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateVendorReturnsID.Designer.vb">
+      <DependentUpon>CreateVendorReturnsID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateVendorReturnsID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CycleCountDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CycleCountDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CycleCountDataTier.vb" />
+    <Compile Include="CycleCountDiscrepancy.Designer.vb">
+      <DependentUpon>CycleCountDiscrepancy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CycleCountDiscrepancy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CycleCountID.Designer.vb">
+      <DependentUpon>CycleCountID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CycleCountID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CycleCountIDDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CycleCountIDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CycleCountTimesCountedDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CycleCountTimesCountedDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DateRangeEntered.Designer.vb">
+      <DependentUpon>DateRangeEntered.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DateRangeEntered.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DateSearchClass.vb" />
+    <Compile Include="EditProjectInformation.Designer.vb">
+      <DependentUpon>EditProjectInformation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditProjectInformation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employeesDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>employeesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EnterDate.Designer.vb">
+      <DependentUpon>EnterDate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EnterDate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnterInventoryInformation.Designer.vb">
+      <DependentUpon>EnterInventoryInformation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EnterInventoryInformation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindHomeOfficeID.Designer.vb">
+      <DependentUpon>FindHomeOfficeID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FindHomeOfficeID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindMSRProjectID.Designer.vb">
+      <DependentUpon>FindMSRProjectID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FindMSRProjectID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindWarehouseID.Designer.vb">
+      <DependentUpon>FindWarehouseID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FindWarehouseID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputDataValidation.vb" />
+    <Compile Include="InternalProjectsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InternalProjectsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InternalProjectsDataTier.vb" />
+    <Compile Include="InternalProjectsIDCreationDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InternalProjectsIDCreationDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InventoryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IssuedPartsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IssuedPartsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IssueInventory.Designer.vb">
+      <DependentUpon>IssueInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IssueInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemNotFound.Designer.vb">
+      <DependentUpon>ItemNotFound.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ItemNotFound.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KeyWordSearchClass.vb" />
+    <Compile Include="LastTransaction.Designer.vb">
+      <DependentUpon>LastTransaction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LastTransaction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LastTransactionDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LastTransactionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LastTransactionDataTier.vb" />
+    <Compile Include="LastTransactionIDDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LastTransactionIDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Logon.Designer.vb">
+      <DependentUpon>Logon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Logon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleUnderDevelopment.vb" />
+    <Compile Include="MSROrderHeaderDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MSROrderHeaderDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MSROrderID.Designer.vb">
+      <DependentUpon>MSROrderID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MSROrderID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MSROrderIDDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MSROrderIDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MSROrderPartsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MSROrderPartsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="OnHandReport.Designer.vb">
+      <DependentUpon>OnHandReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OnHandReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PartDescriptionDateIssuedSearch.Designer.vb">
+      <DependentUpon>PartDescriptionDateIssuedSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PartDescriptionDateIssuedSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PartNumberDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PartNumberDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PartNumberDateIssuedSearch.Designer.vb">
+      <DependentUpon>PartNumberDateIssuedSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PartNumberDateIssuedSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PartNumberDateSearch.Designer.vb">
+      <DependentUpon>PartNumberDateSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PartNumberDateSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PartNumberIDDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PartNumberIDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PartNumbersID.Designer.vb">
+      <DependentUpon>PartNumbersID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PartNumbersID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PartProjectTransactionReport.Designer.vb">
+      <DependentUpon>PartProjectTransactionReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PartProjectTransactionReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PartsDataTier.vb" />
+    <Compile Include="PartsIssuedOverADateRange.Designer.vb">
+      <DependentUpon>PartsIssuedOverADateRange.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PartsIssuedOverADateRange.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PickListDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PickListDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PickListDataTier.vb" />
+    <Compile Include="PickListExists.Designer.vb">
+      <DependentUpon>PickListExists.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PickListExists.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PickListIDDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PickListIDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PickListTransactionIDDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PickListTransactionIDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PickListTransactionsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PickListTransactionsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PleaseWait.Designer.vb">
+      <DependentUpon>PleaseWait.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PleaseWait.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintPickList.Designer.vb">
+      <DependentUpon>PrintPickList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PrintPickList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectIssuedTransactions.Designer.vb">
+      <DependentUpon>ProjectIssuedTransactions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectIssuedTransactions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectReceivedTransactions.Designer.vb">
+      <DependentUpon>ProjectReceivedTransactions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectReceivedTransactions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectTransactionReport.Designer.vb">
+      <DependentUpon>ProjectTransactionReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectTransactionReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectTransactionSearch.Designer.vb">
+      <DependentUpon>ProjectTransactionSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectTransactionSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceivedPartsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReceivedPartsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReceiveMenu.Designer.vb">
+      <DependentUpon>ReceiveMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReceiveMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportMenu.Designer.vb">
+      <DependentUpon>ReportMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnMaterialToWarehouse.Designer.vb">
+      <DependentUpon>ReturnMaterialToWarehouse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnMaterialToWarehouse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchDateByDescription.Designer.vb">
+      <DependentUpon>SearchDateByDescription.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchDateByDescription.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchPartsByDate.Designer.vb">
+      <DependentUpon>SearchPartsByDate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchPartsByDate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchPartsByMSRNumber.Designer.vb">
+      <DependentUpon>SearchPartsByMSRNumber.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchPartsByMSRNumber.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectPartsWarehouse.Designer.vb">
+      <DependentUpon>SelectPartsWarehouse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectPartsWarehouse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockAdjustmentDateReport.Designer.vb">
+      <DependentUpon>StockAdjustmentDateReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockAdjustmentDateReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TWInventoryDataTier.vb" />
+    <Compile Include="UpdateInventory.Designer.vb">
+      <DependentUpon>UpdateInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateWarehouseInventory.Designer.vb">
+      <DependentUpon>UpdateWarehouseInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateWarehouseInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UseInventory.Designer.vb">
+      <DependentUpon>UseInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UseInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UseMaterialFromIssued.Designer.vb">
+      <DependentUpon>UseMaterialFromIssued.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UseMaterialFromIssued.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ValidatePartNumber.Designer.vb">
+      <DependentUpon>ValidatePartNumber.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ValidatePartNumber.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ValidateProjectID.Designer.vb">
+      <DependentUpon>ValidateProjectID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ValidateProjectID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VendorReturns.Designer.vb">
+      <DependentUpon>VendorReturns.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VendorReturns.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VendorReturnsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VendorReturnsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VendorReturnsIDDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VendorReturnsIDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VerifyPickListInformation.Designer.vb">
+      <DependentUpon>VerifyPickListInformation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VerifyPickListInformation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewCurrentInventory.Designer.vb">
+      <DependentUpon>ViewCurrentInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCurrentInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewInventory.Designer.vb">
+      <DependentUpon>ViewInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewLastTransaction.Designer.vb">
+      <DependentUpon>ViewLastTransaction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLastTransaction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewProjects.Designer.vb">
+      <DependentUpon>ViewProjects.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewProjects.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewTimeWarnerTransactions.Designer.vb">
+      <DependentUpon>ViewTimeWarnerTransactions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTimeWarnerTransactions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewWarehouseInventory.Designer.vb">
+      <DependentUpon>ViewWarehouseInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewWarehouseInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WarehouseInventoryDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WarehouseInventoryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WarehouseInventoryDataSet.vb">
+      <DependentUpon>WarehouseInventoryDataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPartNumberToInventory.resx">
+      <DependentUpon>AddPartNumberToInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPartNumberToWarehouseInventory.resx">
+      <DependentUpon>AddPartNumberToWarehouseInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPartsToInventory.resx">
+      <DependentUpon>AddPartsToInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdjustInventory.resx">
+      <DependentUpon>AdjustInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdjustTWInventoryCounts.resx">
+      <DependentUpon>AdjustTWInventoryCounts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMenu.resx">
+      <DependentUpon>AdminMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalculateOnHandInventory.resx">
+      <DependentUpon>CalculateOnHandInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeText.resx">
+      <DependentUpon>ChangeText.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckForDuplicatePartNumber.resx">
+      <DependentUpon>CheckForDuplicatePartNumber.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CloseProgram.resx">
+      <DependentUpon>CloseProgram.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompleteInventoryReport.resx">
+      <DependentUpon>CompleteInventoryReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateCycleCountTickets.resx">
+      <DependentUpon>CreateCycleCountTickets.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateID.resx">
+      <DependentUpon>CreateID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateLastTransactionID.resx">
+      <DependentUpon>CreateLastTransactionID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreatePickListFromMSR.resx">
+      <DependentUpon>CreatePickListFromMSR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreatePickListFromProjectID.resx">
+      <DependentUpon>CreatePickListFromProjectID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreatePickListHeader.resx">
+      <DependentUpon>CreatePickListHeader.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreatePickListID.resx">
+      <DependentUpon>CreatePickListID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreatePickListMenu.resx">
+      <DependentUpon>CreatePickListMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreatePickListTransactionID.resx">
+      <DependentUpon>CreatePickListTransactionID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreatePickListTransactions.resx">
+      <DependentUpon>CreatePickListTransactions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateProjectID.resx">
+      <DependentUpon>CreateProjectID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateProjects.resx">
+      <DependentUpon>CreateProjects.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateVendorReturnsID.resx">
+      <DependentUpon>CreateVendorReturnsID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CycleCountDiscrepancy.resx">
+      <DependentUpon>CycleCountDiscrepancy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CycleCountID.resx">
+      <DependentUpon>CycleCountID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DateRangeEntered.resx">
+      <DependentUpon>DateRangeEntered.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditProjectInformation.resx">
+      <DependentUpon>EditProjectInformation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnterDate.resx">
+      <DependentUpon>EnterDate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnterInventoryInformation.resx">
+      <DependentUpon>EnterInventoryInformation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindHomeOfficeID.resx">
+      <DependentUpon>FindHomeOfficeID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindMSRProjectID.resx">
+      <DependentUpon>FindMSRProjectID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindWarehouseID.resx">
+      <DependentUpon>FindWarehouseID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IssueInventory.resx">
+      <DependentUpon>IssueInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemNotFound.resx">
+      <DependentUpon>ItemNotFound.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LastTransaction.resx">
+      <DependentUpon>LastTransaction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logon.resx">
+      <DependentUpon>Logon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MSROrderID.resx">
+      <DependentUpon>MSROrderID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnHandReport.resx">
+      <DependentUpon>OnHandReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartDescriptionDateIssuedSearch.resx">
+      <DependentUpon>PartDescriptionDateIssuedSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartNumberDateIssuedSearch.resx">
+      <DependentUpon>PartNumberDateIssuedSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartNumberDateSearch.resx">
+      <DependentUpon>PartNumberDateSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartNumbersID.resx">
+      <DependentUpon>PartNumbersID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartProjectTransactionReport.resx">
+      <DependentUpon>PartProjectTransactionReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartsIssuedOverADateRange.resx">
+      <DependentUpon>PartsIssuedOverADateRange.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PickListExists.resx">
+      <DependentUpon>PickListExists.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PleaseWait.resx">
+      <DependentUpon>PleaseWait.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintPickList.resx">
+      <DependentUpon>PrintPickList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectIssuedTransactions.resx">
+      <DependentUpon>ProjectIssuedTransactions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectReceivedTransactions.resx">
+      <DependentUpon>ProjectReceivedTransactions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectTransactionReport.resx">
+      <DependentUpon>ProjectTransactionReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectTransactionSearch.resx">
+      <DependentUpon>ProjectTransactionSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceiveMenu.resx">
+      <DependentUpon>ReceiveMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportMenu.resx">
+      <DependentUpon>ReportMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnMaterialToWarehouse.resx">
+      <DependentUpon>ReturnMaterialToWarehouse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchDateByDescription.resx">
+      <DependentUpon>SearchDateByDescription.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchPartsByDate.resx">
+      <DependentUpon>SearchPartsByDate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchPartsByMSRNumber.resx">
+      <DependentUpon>SearchPartsByMSRNumber.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectPartsWarehouse.resx">
+      <DependentUpon>SelectPartsWarehouse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockAdjustmentDateReport.resx">
+      <DependentUpon>StockAdjustmentDateReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateInventory.resx">
+      <DependentUpon>UpdateInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateWarehouseInventory.resx">
+      <DependentUpon>UpdateWarehouseInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseInventory.resx">
+      <DependentUpon>UseInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseMaterialFromIssued.resx">
+      <DependentUpon>UseMaterialFromIssued.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ValidatePartNumber.resx">
+      <DependentUpon>ValidatePartNumber.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ValidateProjectID.resx">
+      <DependentUpon>ValidateProjectID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VendorReturns.resx">
+      <DependentUpon>VendorReturns.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerifyPickListInformation.resx">
+      <DependentUpon>VerifyPickListInformation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewCurrentInventory.resx">
+      <DependentUpon>ViewCurrentInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewInventory.resx">
+      <DependentUpon>ViewInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLastTransaction.resx">
+      <DependentUpon>ViewLastTransaction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewProjects.resx">
+      <DependentUpon>ViewProjects.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewTimeWarnerTransactions.resx">
+      <DependentUpon>ViewTimeWarnerTransactions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewWarehouseInventory.resx">
+      <DependentUpon>ViewWarehouseInventory.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AdjustInventoryDataSet.xsc">
+      <DependentUpon>AdjustInventoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AdjustInventoryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AdjustInventoryDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AdjustInventoryDataSet.xss">
+      <DependentUpon>AdjustInventoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="app.config" />
+    <None Include="ArchiveIDDataSet.xsc">
+      <DependentUpon>ArchiveIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ArchiveIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ArchiveIDDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ArchiveIDDataSet.xss">
+      <DependentUpon>ArchiveIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ArchiveIssuedDataSet.xsc">
+      <DependentUpon>ArchiveIssuedDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ArchiveIssuedDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ArchiveIssuedDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ArchiveIssuedDataSet.xss">
+      <DependentUpon>ArchiveIssuedDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ArchiveReceivedDataSet.xsc">
+      <DependentUpon>ArchiveReceivedDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ArchiveReceivedDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ArchiveReceivedDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ArchiveReceivedDataSet.xss">
+      <DependentUpon>ArchiveReceivedDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ArchiveUsedDataSet.xsc">
+      <DependentUpon>ArchiveUsedDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ArchiveUsedDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ArchiveUsedDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ArchiveUsedDataSet.xss">
+      <DependentUpon>ArchiveUsedDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BOMPartsDataSet.xsc">
+      <DependentUpon>BOMPartsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BOMPartsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BOMPartsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BOMPartsDataSet.xss">
+      <DependentUpon>BOMPartsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CreateIIDDataSet.xsc">
+      <DependentUpon>CreateIIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CreateIIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CreateIIDDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CreateIIDDataSet.xss">
+      <DependentUpon>CreateIIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CycleCountDataSet.xsc">
+      <DependentUpon>CycleCountDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CycleCountDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CycleCountDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CycleCountDataSet.xss">
+      <DependentUpon>CycleCountDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CycleCountIDDataSet.xsc">
+      <DependentUpon>CycleCountIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CycleCountIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CycleCountIDDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CycleCountIDDataSet.xss">
+      <DependentUpon>CycleCountIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CycleCountTimesCountedDataSet.xsc">
+      <DependentUpon>CycleCountTimesCountedDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CycleCountTimesCountedDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CycleCountTimesCountedDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CycleCountTimesCountedDataSet.xss">
+      <DependentUpon>CycleCountTimesCountedDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="employeesDataSet.xsc">
+      <DependentUpon>employeesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="employeesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>employeesDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="employeesDataSet.xss">
+      <DependentUpon>employeesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InternalProjectsDataSet.xsc">
+      <DependentUpon>InternalProjectsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InternalProjectsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InternalProjectsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InternalProjectsDataSet.xss">
+      <DependentUpon>InternalProjectsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InternalProjectsIDCreationDataSet.xsc">
+      <DependentUpon>InternalProjectsIDCreationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InternalProjectsIDCreationDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InternalProjectsIDCreationDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InternalProjectsIDCreationDataSet.xss">
+      <DependentUpon>InternalProjectsIDCreationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InventoryDataSet.xsc">
+      <DependentUpon>InventoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InventoryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InventoryDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InventoryDataSet.xss">
+      <DependentUpon>InventoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="IssuedPartsDataSet.xsc">
+      <DependentUpon>IssuedPartsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="IssuedPartsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IssuedPartsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IssuedPartsDataSet.xss">
+      <DependentUpon>IssuedPartsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LastTransactionDataSet.xsc">
+      <DependentUpon>LastTransactionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LastTransactionDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LastTransactionDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LastTransactionDataSet.xss">
+      <DependentUpon>LastTransactionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LastTransactionIDDataSet.xsc">
+      <DependentUpon>LastTransactionIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LastTransactionIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LastTransactionIDDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LastTransactionIDDataSet.xss">
+      <DependentUpon>LastTransactionIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MSROrderHeaderDataSet.xsc">
+      <DependentUpon>MSROrderHeaderDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MSROrderHeaderDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MSROrderHeaderDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MSROrderHeaderDataSet.xss">
+      <DependentUpon>MSROrderHeaderDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MSROrderIDDataSet.xsc">
+      <DependentUpon>MSROrderIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MSROrderIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MSROrderIDDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MSROrderIDDataSet.xss">
+      <DependentUpon>MSROrderIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MSROrderPartsDataSet.xsc">
+      <DependentUpon>MSROrderPartsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MSROrderPartsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MSROrderPartsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MSROrderPartsDataSet.xss">
+      <DependentUpon>MSROrderPartsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="PartNumberDataSet.xsc">
+      <DependentUpon>PartNumberDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PartNumberDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PartNumberDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PartNumberDataSet.xss">
+      <DependentUpon>PartNumberDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PartNumberIDDataSet.xsc">
+      <DependentUpon>PartNumberIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PartNumberIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PartNumberIDDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PartNumberIDDataSet.xss">
+      <DependentUpon>PartNumberIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PickListDataSet.xsc">
+      <DependentUpon>PickListDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PickListDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PickListDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PickListDataSet.xss">
+      <DependentUpon>PickListDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PickListIDDataSet.xsc">
+      <DependentUpon>PickListIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PickListIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PickListIDDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PickListIDDataSet.xss">
+      <DependentUpon>PickListIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PickListTransactionIDDataSet.xsc">
+      <DependentUpon>PickListTransactionIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PickListTransactionIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PickListTransactionIDDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PickListTransactionIDDataSet.xss">
+      <DependentUpon>PickListTransactionIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PickListTransactionsDataSet.xsc">
+      <DependentUpon>PickListTransactionsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PickListTransactionsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PickListTransactionsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PickListTransactionsDataSet.xss">
+      <DependentUpon>PickListTransactionsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ReceivedPartsDataSet.xsc">
+      <DependentUpon>ReceivedPartsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ReceivedPartsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReceivedPartsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ReceivedPartsDataSet.xss">
+      <DependentUpon>ReceivedPartsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VendorReturnsDataSet.xsc">
+      <DependentUpon>VendorReturnsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VendorReturnsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VendorReturnsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VendorReturnsDataSet.xss">
+      <DependentUpon>VendorReturnsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VendorReturnsIDDataSet.xsc">
+      <DependentUpon>VendorReturnsIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VendorReturnsIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VendorReturnsIDDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VendorReturnsIDDataSet.xss">
+      <DependentUpon>VendorReturnsIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="WarehouseInventoryDataSet.xsc">
+      <DependentUpon>WarehouseInventoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="WarehouseInventoryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WarehouseInventoryDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WarehouseInventoryDataSet.xss">
+      <DependentUpon>WarehouseInventoryDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Archive.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CycleCount.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tools.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TWCInventory.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
